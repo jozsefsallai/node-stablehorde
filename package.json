@@ -1,0 +1,48 @@
+{
+  "name": "stablehorde",
+  "version": "1.0.0",
+  "description": "Node.js API wrapper for Stable Horde.",
+  "main": "lib/index.js",
+  "files": [
+    "/lib"
+  ],
+  "scripts": {
+    "build": "rm -rf lib && tsc",
+    "docs": "typedoc",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "npm run lint -- --fix",
+    "prepack": "npm run build",
+    "watch": "npm run build -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jozsefsallai/node-stablehorde.git"
+  },
+  "keywords": [
+    "stable horde",
+    "stable diffusion",
+    "image generation",
+    "AI",
+    "api client"
+  ],
+  "author": "József Sallai @jozsefsallai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jozsefsallai/node-stablehorde/issues"
+  },
+  "homepage": "https://github.com/jozsefsallai/node-stablehorde#readme",
+  "dependencies": {
+    "axios": "^1.1.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.2",
+    "@typescript-eslint/eslint-plugin": "^5.40.1",
+    "@typescript-eslint/parser": "^5.40.1",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1",
+    "typedoc": "^0.23.17",
+    "typescript": "^4.8.4"
+  }
+}
